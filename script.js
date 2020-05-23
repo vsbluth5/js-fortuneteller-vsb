@@ -1,11 +1,16 @@
 console.log("RUNNING")
 const fortuneTeller = document.querySelector("#teller")
-const fortunr = document.querySelector("#words")
+const fortune = document.querySelector("#words")
 
-fortuneTeller.addeventListener("mouseover", ()=>{
+const randint = (a, b)=>{
+  return math.floor(math.random()*(b-a))
+}
+
+fortuneTeller.addEventListener("mouseover", ()=>{
   console.log("Mouse Over")
 })
 
-fortuneTeller.addeventListener("click", ()=>{
+fortuneTeller.addEventListener("click", ()=>{
   console.log("Tell a fortune!")
+  fortune.innerHTML = `${fortunes[randint(0, fortunes.length)]}`
 })

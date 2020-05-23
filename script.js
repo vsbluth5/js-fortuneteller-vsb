@@ -7,13 +7,13 @@ const randint = (a, b) => {
 };
 
 fortuneTeller.addEventListener("mouseenter", event => {
-  console.log("Mouse Over");
-  // event.target.classList.add("glow");
+  console.log("Mouse Enter");
+  event.target.classList.add("active");
 });
 
-fortuneTeller.addEventListener("mouseover", event => {
-  console.log("Mouse Over");
-  event.target.classList.add("glow");
+fortuneTeller.addEventListener("mouseout", event => {
+  console.log("Mouse Exit");
+  event.target.classList.remove("active");
 });
 
 fortuneTeller.addEventListener("click", () => {

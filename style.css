@@ -3,9 +3,14 @@
 }
 
 #words {
-  
+  color: white;
 }
 
 .glow {
-  color: yellow;
+  cwebkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.8));
+     filter: drop-shadow(20px 20px 20px rgba(250, 255, 255, 0.5));
+}
+
+body {
+  background-color: black;
 }

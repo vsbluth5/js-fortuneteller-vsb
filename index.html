@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <div class="card" style="width: 18rem;">
+    <div class="card card bg-dark text-white text-center" style="width:400px">
+      <div class="card-body">
+        <h4 class="card-title text-center">Click on me for a fortune.</h4>
+        <p class="card-text text-center" id="words"></p>
+      </div>
       <img
-        class="card-img-top"
+        class="card-img-bottom"
         id="teller"
         src="fortune_teller.png"
-        alt="Card image cap"
+        alt="Card image"
       />
-      <div class="card-body" id ="words">
-        <p class="card-text text-center">
-          Click on me to get a new fortune...
-        </p>
-      </div>
     </div>
+
     <script src="otherlists.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
   </body>

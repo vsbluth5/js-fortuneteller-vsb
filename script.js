@@ -30,6 +30,7 @@ fortuneTeller.addEventListener("click", () => {
   // Use the innerHTML property
   // fortune.innerHTML = `<img src="fortune_teller.png"/>`
   // Do we want to add images, change images dependent on the count?
+  count = count + 1;
   fortune.innerHTML = `Count = ${count}`
   
   // More advanced = get a random entry from the list and display

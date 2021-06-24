@@ -1,12 +1,9 @@
 console.log("RUNNING");
-// get reference to the fortune teller image
 const fortuneTeller = document.querySelector("#teller");
+const fortune = document.querySelector("#words");
 
-// get a reference to the div which displays the words
-
-// define a function to get random integers between a and b
 const randint = (a, b) => {
-  return Math.floor(Math.random() * Math.abs(b - a));
+  return Math.floor(Math.random() * (b - a));
 };
 
 fortuneTeller.addEventListener("mouseenter", event => {
@@ -19,15 +16,7 @@ fortuneTeller.addEventListener("mouseout", event => {
   fortuneTeller.classList.remove("active");
 });
 
-
 fortuneTeller.addEventListener("click", () => {
   console.log("Tell a fortune!");
-  
-  // 
-  
-  // add innerHTML to the words when the teller is clickec
-  
-  
-  // More advanced = get a random entry from the list and display
-  
+  fortune.innerHTML = `${fortunes[randint(0, fortunes.length)]}`;
 });

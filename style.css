@@ -1,8 +1,8 @@
 #teller {
    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+  margin: auto;
+  // margin-right: auto;
+  width: 15%;
   
 }
 

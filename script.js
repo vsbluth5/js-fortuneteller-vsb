@@ -1,8 +1,9 @@
 console.log("RUNNING");
 // get reference to the fortune teller image
 const fortuneTeller = document.querySelector("#teller");
-const fortune = document.querySelector("#word");
-console.log(fortune)
+const fortune = document.querySelector("#words");
+// console.log(fortune.ineerHTML)
+let count = 0;
 
 // get a reference to the div which displays the words
 
@@ -27,8 +28,9 @@ fortuneTeller.addEventListener("click", () => {
   
   // Have the teller say how many times it has been clicked
   // Use the innerHTML property
-  
+  // fortune.innerHTML = `<img src="fortune_teller.png"/>`
   // Do we want to add images, change images dependent on the count?
+  fortune.innerHTML = `Count = ${count}`
   
   // More advanced = get a random entry from the list and display
   

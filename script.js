@@ -8,12 +8,12 @@ const randint = (a, b) => {
 
 fortuneTeller.addEventListener("mouseenter", event => {
   console.log("Mouse Enter");
-  // event.target.classList.add("active");
+  fortuneTeller.classList.add("active");
 });
 
 fortuneTeller.addEventListener("mouseout", event => {
   console.log("Mouse Exit");
-  // event.target.classList.remove("active");
+  fortuneTeller.classList.remove("active");
 });
 
 fortuneTeller.addEventListener("click", () => {
